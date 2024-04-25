@@ -2,7 +2,11 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>llama_7b.bin</LocalDebuggerCommandArguments>
-    <RemoteDebuggerCommandArguments>llama_7b.bin</RemoteDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>llama2_7b.bin</LocalDebuggerCommandArguments>
+    <RemoteDebuggerCommandArguments>llama2_7b.bin</RemoteDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>llama2_7b.bin</LocalDebuggerCommandArguments>
+    <RemoteDebuggerCommandArguments>llama2_7b.bin</RemoteDebuggerCommandArguments>
   </PropertyGroup>
 </Project>

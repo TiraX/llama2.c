@@ -156,6 +156,7 @@ void read_checkpoint(char* checkpoint, Config* config, TransformerWeights* weigh
 	fseek(file, 0, SEEK_SET);
 	*data = (float*)malloc(*file_size);
 	memset(*data, 0, *file_size);
+	fread(*data, *file_size, 1, file);
 	//fclose(file);
 	// memory map the Transformer weights into the data pointer
 	//*fd = open(checkpoint, O_RDONLY); // open in read only mode
