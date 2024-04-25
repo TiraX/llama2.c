@@ -6,7 +6,7 @@
     <RemoteDebuggerCommandArguments>llama2_7b.bin</RemoteDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LocalDebuggerCommandArguments>llama2_7b.bin</LocalDebuggerCommandArguments>
-    <RemoteDebuggerCommandArguments>llama2_7b.bin</RemoteDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>llama2_7b_q80.bin -n 140</LocalDebuggerCommandArguments>
+    <RemoteDebuggerCommandArguments>llama2_7b_q80.bin -n 140</RemoteDebuggerCommandArguments>
   </PropertyGroup>
 </Project>
